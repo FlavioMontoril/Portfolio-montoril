@@ -5,7 +5,7 @@ import perfil from "@/public/Image-portfolio.png"
 import Image from "next/image"
 
 export function About() {
-  const skills = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "HTML", "CSS", "MySQL", "Power BI", "Java"]
+  const skills = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "MySQL", "Java", "HTML", "CSS", "Power BI"]
 
   const features = [
     {

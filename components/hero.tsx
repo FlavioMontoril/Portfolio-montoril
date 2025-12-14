@@ -46,7 +46,7 @@ export function Hero() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/flaviomontoril"
+              href="https://www.linkedin.com/in/flavio-montoril-dev-76b1b1255/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-200"

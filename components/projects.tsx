@@ -31,7 +31,7 @@ export function Projects() {
       description: "Site pessoal moderno e responsivo desenvolvido com as mais recentes tecnologias web.",
       // image: "/modern-portfolio-website-design-with-clean-layout.png",
       technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-      githubUrl: "https://github.com/flaviomontoril/portfolio",
+      githubUrl: "https://github.com/FlavioMontoril/Portfolio-montoril",
     },
   ]
 
