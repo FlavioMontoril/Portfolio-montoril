@@ -5,7 +5,7 @@ import perfil from "@/public/Image-portfolio.png"
 import Image from "next/image"
 
 export function About() {
-  const skills = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "MySQL", "Java", "HTML", "CSS", "Power BI"]
+  const skills = ["JavaScript", "TypeScript", "Reactjs", "Next.js", "Node.js", "MySQL", "Java"]
 
   const features = [
     {
@@ -61,8 +61,8 @@ export function About() {
               <h3 className="text-2xl font-semibold mb-4">Flávio Montoril</h3>
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
                 Estudante de Análise e Desenvolvimento de Sistemas na{" "}
-                <span className="text-primary font-medium">UNIFAMETRO</span>, com conhecimento em MySQL, Power BI, e
-                desenvolvimento de sistemas utilizando Java, JavaScript, HTML e CSS.
+                <span className="text-primary font-medium">UNIFAMETRO</span>, com conhecimento em desenvolvimento web utilizando Reactjs, 
+                Nextjs e TypeScript.
               </p>
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
                 Apaixonado por criar soluções digitais que fazem a diferença, sempre buscando aprender novas tecnologias

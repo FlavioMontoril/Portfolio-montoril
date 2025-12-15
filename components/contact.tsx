@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import emailjs from "@emailjs/browser"
 
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -10,20 +11,47 @@ import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import { Button } from "./ui/button"
 
+emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_KEY!)
+
 export function Contact() {
+  const [loading, setLoading] = useState<boolean>(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    title: "",
     message: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", message: "" })
+    setLoading(true)
+
+
+
+       emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE!,
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.title,
+          message: formData.message,
+        },
+      )
+      .then(() => {
+        alert("Mensagem enviada com sucesso!")
+        setFormData({ name: "", email: "", title: "", message: "" })
+      })
+      .catch((error) => {
+        console.error("Erro ao enviar email:", error)
+        alert("Erro ao enviar mensagem. Tente novamente.")
+      })
+      .finally(() => {
+        setLoading(false)
+      })
   }
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
@@ -130,6 +158,19 @@ export function Contact() {
                     />
                   </div>
 
+                    <div className="space-y-2">
+                    <Label htmlFor="message">Titulo</Label>
+                    <Textarea
+                      id="title"
+                      name="title"
+                      value={formData.title}
+                      onChange={handleChange}
+                      placeholder="Adicione Um titulo..."
+                      rows={5}
+                      required
+                    />
+                  </div>
+
                   <div className="space-y-2">
                     <Label htmlFor="message">Mensagem</Label>
                     <Textarea
@@ -143,9 +184,9 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full">
+                  <Button type="submit" className="w-full" disabled={loading}>
                     <Send className="h-4 w-4 mr-2" />
-                    Enviar Mensagem
+                    {loading ? "Enviando..." : "Enviar Mensagem"}
                   </Button>
                 </form>
               </CardContent>
