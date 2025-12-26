@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Code, Database, Globe, Smartphone } from "lucide-react"
-import perfil from "@/public/Image-portfolio.png"
+import perfil from "@/public/Image-perfil.png"
 import Image from "next/image"
 
 export function About() {
@@ -11,7 +11,7 @@ export function About() {
     {
       icon: <Code className="h-8 w-8 text-primary" />,
       title: "Desenvolvimento Frontend",
-      description: "Criação de interfaces modernas e responsivas com React e Next.js",
+      description: "Criação de interfaces modernas e responsivas com React, Next.js e Tailwindcss",
     },
     {
       icon: <Database className="h-8 w-8 text-primary" />,
@@ -62,7 +62,7 @@ export function About() {
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
                 Estudante de Análise e Desenvolvimento de Sistemas na{" "}
                 <span className="text-primary font-medium">UNIFAMETRO</span>, com conhecimento em desenvolvimento web utilizando Reactjs, 
-                Nextjs e TypeScript.
+                Nextjs, TypeScript e Tailwindcss.
               </p>
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
                 Apaixonado por criar soluções digitais que fazem a diferença, sempre buscando aprender novas tecnologias

@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 export function Projects() {
   const projects = [
@@ -15,7 +16,7 @@ export function Projects() {
     {
       title: "Api Restfull de Criação de Tafefas",
       description: "API REST desenvolvida com Node.js e TypeScript, utilizando Express como framework e Zod para validação de dados. Implementa autenticação com JWT, containerização com Docker e Prisma como ORM para manipulação do banco de dados relacional MySQL. Inclui operações CRUD, regras de autenticação e boas práticas de arquitetura e segurança.",
-      // image: "/educational-management-system-interface-with-stude.png",
+      image: "/image-backend.png",
       technologies: ["TypeScript", "Nodejs", "MySQL", "Prisma"],
       githubUrl: "https://github.com/FlavioMontoril/project-backend",
     },
@@ -29,9 +30,16 @@ export function Projects() {
     {
       title: "Portfolio Pessoal",
       description: "Site pessoal moderno e responsivo desenvolvido com as mais recentes tecnologias web.",
-      // image: "/modern-portfolio-website-design-with-clean-layout.png",
+      image: "/image-portfolio.png",
       technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       githubUrl: "https://github.com/FlavioMontoril/Portfolio-montoril",
+    },
+      {
+      title: "Chat Multichannel",
+      description: "Chat em tempo real com servidor e frontend, moderno e com canais para conversas",
+      image: "/image-chat.png",
+      technologies: ["Next.js", "Node.js", "Socket.io", "TypeScript", "Tailwind CSS"],
+      githubUrl: "https://github.com/FlavioMontoril/chat-multichannel",
     },
   ]
 
@@ -57,6 +65,13 @@ export function Projects() {
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   /> */}
+                  <Image
+                    src={project.image ?? "/im"}
+                    alt={project.title}
+                    width={600}
+                    height={300}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                   <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
@@ -74,7 +89,7 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex gap-3"> 
+                  <div className="flex gap-3">
                     <Button size="sm" asChild>
                       <a
                         href={project.githubUrl}
