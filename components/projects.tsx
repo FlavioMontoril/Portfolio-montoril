@@ -9,7 +9,7 @@ export function Projects() {
     {
       title: "Fronte-end/Flow Criação de Tarefas",
       description: "Aplicação de gerenciamento de tarefas (CRUD) desenvolvida com ReactJS, TypeScript, React Router, React Flow e Zustand para gerenciamento de estado. A aplicação consome dados de uma API externa, permitindo fazer todas as operações(CRUD). Interface intuitiva com visualização de fluxo das tarefas.",
-      // image: "/modern-web-application-dashboard-with-user-managem.png",
+      image: "/image-task-front.png",
       technologies: ["TypeScript", "React", "ReactFlow", "Zustand"],
       githubUrl: "https://github.com/FlavioMontoril/taskfront-crud-flow",
     },
@@ -34,11 +34,18 @@ export function Projects() {
       technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       githubUrl: "https://github.com/FlavioMontoril/Portfolio-montoril",
     },
-      {
+    {
       title: "Chat Multichannel",
       description: "Chat em tempo real com servidor e frontend, moderno e com canais para conversas",
       image: "/image-chat.png",
       technologies: ["Next.js", "Node.js", "Socket.io", "TypeScript", "Tailwind CSS"],
+      githubUrl: "https://github.com/FlavioMontoril/chat-multichannel",
+    },
+    {
+      title: "Api GraphQL",
+      description: "API GraphQL para gerenciamento de tarefas (CRUD), com arquitetura limpa (Factory, Use Case, Repository). Tecnologias - Node.js + TypeScript - MySQL - GraphQL com Apollo Server (Standalone) - .env para variáveis de ambiente",
+      image: "/image-graphql.png",
+      technologies: ["Node.js","TypeScript", "SQL"],
       githubUrl: "https://github.com/FlavioMontoril/chat-multichannel",
     },
   ]

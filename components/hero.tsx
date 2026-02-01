@@ -23,7 +23,7 @@ export function Hero() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-pretty">
-            Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por criar soluções digitais inovadoras
+            Analista e Desenvolvedor de Sistemas, apaixonado por criar soluções digitais inovadoras
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

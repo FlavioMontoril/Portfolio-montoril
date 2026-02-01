@@ -16,7 +16,7 @@ export function About() {
     {
       icon: <Database className="h-8 w-8 text-primary" />,
       title: "Back-end",
-      description: "Desenvolvimento de ApiRestfull, utilizando Nodejs, Typescript, Authenticação JWT, Prisma como ORM e MYSQL ",
+      description: "Desenvolvimento de ApiRestfull e GraphQL utilizando Nodejs, Typescript, Authenticação JWT, Prisma como ORM e SQL",
     },
     {
       icon: <Globe className="h-8 w-8 text-primary" />,
@@ -39,7 +39,7 @@ export function About() {
               <span className="gradient-text">Sobre Mim</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Estudante dedicado com paixão por tecnologia e desenvolvimento de sistemas
+              Recém-formado, com experiência prática como estagiário de desenvolvimento web e grande interesse em tecnologia e sistemas.
             </p>
           </div>
 
@@ -60,13 +60,16 @@ export function About() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Flávio Montoril</h3>
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
-                Estudante de Análise e Desenvolvimento de Sistemas na{" "}
-                <span className="text-primary font-medium">UNIFAMETRO</span>, com conhecimento em desenvolvimento web utilizando Reactjs, 
-                Nextjs, TypeScript e Tailwindcss.
+                Analista e Desenvolvedor de Sistemas pela{" "}
+                <span className="text-primary font-medium">UNIFAMETRO</span>, com experiência no desenvolvimento de aplicações web utilizando
+                 Typescript, React.js, Next.js, Tailwindcss, Node.js e SQL.
+                <br/>
+                <br/>
+                 Pós-graduando em Engenharia de Software, DeVops e Cloud Computing.
               </p>
               <p className="text-muted-foreground mb-6 text-pretty leading-relaxed">
-                Apaixonado por criar soluções digitais que fazem a diferença, sempre buscando aprender novas tecnologias
-                e aplicar as melhores práticas de desenvolvimento.
+                Apaixonado por criar soluções digitais criativas e escaláveis que fazem a diferença, sempre buscando aprender novas tecnologias
+                e aplicar as melhores práticas de desenvolvimento, performance e segurança.
               </p>
 
               <div className="mb-6">
