@@ -45,7 +45,7 @@ export function Projects() {
       title: "Api GraphQL",
       description: "API GraphQL para gerenciamento de tarefas (CRUD), com arquitetura limpa (Factory, Use Case, Repository). Tecnologias - Node.js + TypeScript - MySQL - GraphQL com Apollo Server (Standalone) - .env para variáveis de ambiente",
       image: "/image-graphql.png",
-      technologies: ["Node.js","TypeScript", "SQL"],
+      technologies: ["Node.js", "TypeScript", "SQL"],
       githubUrl: "https://github.com/FlavioMontoril/chat-multichannel",
     },
   ]
@@ -67,18 +67,15 @@ export function Projects() {
             {projects.map((project, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <div className="relative overflow-hidden">
-                  {/* <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  /> */}
-                  <Image
-                    src={project.image ?? "/im"}
-                    alt={project.title}
-                    width={600}
-                    height={300}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  {project.image && (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={600}
+                      height={300}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
