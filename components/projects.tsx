@@ -14,7 +14,7 @@ export function Projects() {
       githubUrl: "https://github.com/FlavioMontoril/taskfront-crud-flow",
     },
     {
-      title: "Api Restfull de Criação de Tafefas",
+      title: "Api Restfull de Criação de Tarefas",
       description: "API REST desenvolvida com Node.js e TypeScript, utilizando Express como framework e Zod para validação de dados. Implementa autenticação com JWT, containerização com Docker e Prisma como ORM para manipulação do banco de dados relacional MySQL. Inclui operações CRUD, regras de autenticação e boas práticas de arquitetura e segurança.",
       image: "/image-backend.png",
       technologies: ["TypeScript", "Nodejs", "MySQL", "Prisma"],
