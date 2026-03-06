@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink } from "lucide-react"
+import { Github, Link } from "lucide-react"
 import Image from "next/image"
 
 export function Projects() {
@@ -46,7 +46,15 @@ export function Projects() {
       description: "API GraphQL para gerenciamento de tarefas (CRUD), com arquitetura limpa (Factory, Use Case, Repository). Tecnologias - Node.js + TypeScript - MySQL - GraphQL com Apollo Server (Standalone) - .env para variáveis de ambiente",
       image: "/image-graphql.png",
       technologies: ["Node.js", "TypeScript", "SQL"],
-      githubUrl: "https://github.com/FlavioMontoril/chat-multichannel",
+      githubUrl: "https://github.com/FlavioMontoril/graphql-tasks-api",
+    },
+    {
+      title: "Tasks Management",
+      description: "Aplicação front-end moderna par cadastro de tarefas com multiplas visualizações, utilizando components do shadcn/ui, zustand e persistindo dados no local storage",
+      image: "/tasks-manager.png",
+      technologies: ["React.js + Vite", "TypeScript", "Zustand", "Shadcn/ui"],
+      githubUrl: "https://github.com/FlavioMontoril/tasks-management-front-end",
+      link: "https://tasks-management-front-end.vercel.app/"
     },
   ]
 
@@ -94,17 +102,29 @@ export function Projects() {
                   </div>
 
                   <div className="flex gap-3">
-                    <Button size="sm" asChild>
+                    <Button title="Ver projeto no github" size="sm" asChild>
                       <a
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
-                        <ExternalLink className="h-4 w-4" />
-                        Ver Projeto
+                        <Github className="h-4 w-4" />
                       </a>
                     </Button>
+                    {project.link && (
+
+                      <Button title="Acessar site da aplicaçao" size="sm" asChild>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          <Link className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
