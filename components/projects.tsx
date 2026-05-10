@@ -56,6 +56,13 @@ export function Projects() {
       githubUrl: "https://github.com/FlavioMontoril/tasks-management-front-end",
       link: "https://tasks-management-front-end.vercel.app/"
     },
+      {
+      title: "Veterinarian WebSite",
+      description: "Landing Page profissional para o setor de Medicina Veterinária, desenvolvida com HTML5, JavaScript e Tailwind CSS 4.0. Apresenta design responsivo, sistemas de carrossel interativo e foco em conversão de clientes. Estrutura otimizada para carregamento rápido e SEO amigável",
+      image: "/veterinarian-website.png",
+      technologies: ["HTML5 + JavaScript", "Tailwind CSS 4.0"],
+      githubUrl: "https://github.com/FlavioMontoril/Veterinaria-Website",
+    },
   ]
 
   return (
