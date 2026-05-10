@@ -54,7 +54,7 @@ export function Projects() {
       image: "/tasks-manager.png",
       technologies: ["React.js + Vite", "TypeScript", "Zustand", "Shadcn/ui"],
       githubUrl: "https://github.com/FlavioMontoril/tasks-management-front-end",
-      link: "https://tasks-management-front-end.vercel.app/"
+      link: "https://tasks-management-front-end.vercel.app/",
     },
       {
       title: "Veterinarian WebSite",
@@ -62,6 +62,7 @@ export function Projects() {
       image: "/veterinarian-website.png",
       technologies: ["HTML5 + JavaScript", "Tailwind CSS 4.0"],
       githubUrl: "https://github.com/FlavioMontoril/Veterinaria-Website",
+      link: "https://veterinaria-website-yp2d.vercel.app/",
     },
   ]
 
